@@ -20,6 +20,9 @@ m.on('topic', (topic) => {
 
 m.on('message', (msg) => {
     console.log(`From ${msg.from}: ${msg.msg}`);
+    if (msg.msg == 'ping') {
+        m.sendMessage('pong!');
+    }
 });
 
 m.on('join', (u) => { console.log(`${u} joined`); });
