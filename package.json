@@ -1,0 +1,13 @@
+{
+  "name": "movienight-bot-framework",
+  "version": "1.0.0",
+  "description": "An event emitter for making movienight bots",
+  "main": "index.js",
+  "repository": "https://github.com/FloatingGhost/movienight-bot-framework",
+  "author": "FloatingGhost",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ws": "^7.2.5"
+  }
+}
