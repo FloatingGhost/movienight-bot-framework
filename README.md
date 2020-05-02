@@ -7,7 +7,7 @@ Subscribe to a Movienight Websocket and do things i guess
 ```javascript
 const Movienight = require('movienight-bot-framework');
 
-const mn = new Movienight('ws://127.0.0.1:8089', 'myBotUsername');
+const mn = new Movienight('ws://127.0.0.1:8089/ws', 'myBotUsername');
 
 mn.on('message', ({ from, msg }) => {
     console.log(`${from} says: ${msg}`);
