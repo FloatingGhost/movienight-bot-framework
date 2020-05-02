@@ -50,7 +50,6 @@ class Movienight extends EventEmitter {
 
         this.ws.on('message', (msg) => {
             const { Type: type, Data: data } = JSON.parse(msg);
-            console.log(`Got message type ${type}`);
             if (!Object.values(messageTypes).includes(type)) {
                 console.error(`Unknown message type ${type}`);
                 return;
